@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Aasha Kandel</title>
+    <title>Aasha Kandel | Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
+<header>
+    <div class="container">
+
         <h1>Aasha Kandel</h1>
-        <p>Information Technology Student</p>
+        <p class="subtitle">Information Technology Student</p>
 
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -21,100 +27,120 @@
             </ul>
         </nav>
 
-        <hr>
-    </header>
+    </div>
+</header>
 
-    <main>
+<main class="container">
 
-        <!-- Profile Section -->
-        <section id="profile">
-            <h2>Profile</h2>
+    <!-- Profile -->
+    <section id="profile" class="card">
+
+        <h2>Profile</h2>
+
+        <div class="profile-content">
 
             <figure>
-                <img src="Aasha.jpeg" alt="Photo of Aasha Kandel" width="200">
+                <img src="Aasha.jpeg" alt="Photo of Aasha Kandel">
                 <figcaption>Aasha Kandel</figcaption>
             </figure>
 
-            <p>Hello! I am <strong>Aasha Kandel</strong>, an Information Technology student.</p>
+            <div>
 
-            <p>I enjoy learning web technologies, programming, and building simple software applications.</p>
+                <p>Hello! I am <strong>Aasha Kandel</strong>, an Information Technology student.</p>
 
-            <p>My objective is to strengthen my technical skills and gain practical experience in software development.</p>
+                <p>I enjoy learning web technologies, programming, and building software applications using modern development practices.</p>
 
-            <hr>
-        </section>
+                <p>My goal is to strengthen my technical skills and pursue a career in software development while continuously learning new technologies.</p>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
+            </div>
 
-            <dl>
+        </div>
 
-                <dt>HTML5</dt>
-                <dd>Experienced in creating semantic and accessible web pages.</dd>
-                <br>
+    </section>
 
-                <dt>C Programming</dt>
-                <dd>Knowledge of loops, functions, arrays, pointers, and basic file operations.</dd>
-                <br>
+    <!-- Skills -->
 
-                <dt>Java Programming</dt>
-                <dd>Understanding of classes, objects, inheritance, and exception handling.</dd>
-                <br>
+    <section id="skills" class="card">
 
-                <dt>Microsoft Office</dt>
-                <dd>Skilled in preparing reports, spreadsheets, and presentations.</dd>
-                <br>
+        <h2>Skills</h2>
 
-                <dt>Communication</dt>
-                <dd>Able to work effectively in academic teams and complete assigned tasks.</dd>
+        <dl>
 
-            </dl>
+            <dt>HTML5</dt>
+            <dd>Creating semantic and accessible webpages.</dd>
 
-            <hr>
-        </section>
+            <dt>CSS3</dt>
+            <dd>Responsive layouts using Flexbox and Grid.</dd>
 
-        <!-- Experience Section -->
-        <section id="experience">
+            <dt>C Programming</dt>
+            <dd>Functions, arrays, pointers and file handling.</dd>
 
-            <h2>Experience</h2>
+            <dt>Java Programming</dt>
+            <dd>Object-oriented programming and exception handling.</dd>
+
+            <dt>Microsoft Office</dt>
+            <dd>Word, Excel and PowerPoint.</dd>
+
+            <dt>Communication</dt>
+            <dd>Teamwork, presentations and collaboration.</dd>
+
+        </dl>
+
+    </section>
+
+    <!-- Experience -->
+
+    <section id="experience" class="card">
+
+        <h2>Experience</h2>
+
+        <div class="experience-grid">
 
             <article>
-                <h3>College Programming Labs</h3>
-                <p>Completed programming exercises and laboratory work using C and Java.</p>
+
+                <h3>Programming Labs</h3>
+
+                <p>Completed practical programming exercises using C and Java.</p>
+
             </article>
 
             <article>
-                <h3>HTML Practice</h3>
-                <p>Developed multiple practice webpages using semantic HTML5 elements.</p>
+
+                <h3>HTML Projects</h3>
+
+                <p>Designed semantic HTML5 webpages and portfolio projects.</p>
+
             </article>
 
             <article>
-                <h3>Group Assignments</h3>
-                <p>Worked with classmates on various academic IT projects and presentations.</p>
+
+                <h3>Academic Teamwork</h3>
+
+                <p>Worked on software engineering, database and networking assignments with classmates.</p>
+
             </article>
 
-            <hr>
+        </div>
 
-        </section>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
+    <!-- Projects -->
 
-            <h2>Projects</h2>
+    <section id="projects" class="card">
+
+        <h2>Projects</h2>
+
+        <div class="project-grid">
 
             <article>
 
                 <h3>Personal Portfolio Website</h3>
 
-                <p>A portfolio website created using semantic HTML5 to present personal information and projects.</p>
+                <p>Designed and developed a responsive portfolio using HTML5 and CSS.</p>
 
-                <p>
-                    Repository:
-                    <a href="https://github.com/aasha114326-lab/Portfolio" target="_blank">
-                        View Repository
-                    </a>
-                </p>
+                <a href="https://github.com/aasha114326-lab/Portfolio" target="_blank">
+                    View Repository
+                </a>
 
             </article>
 
@@ -122,67 +148,61 @@
 
                 <h3>Programming Practice Repository</h3>
 
-                <p>This repository contains coursework, coding practice, and future IT projects.</p>
+                <p>A GitHub repository containing coursework and programming practice.</p>
 
-                <p>
-                    GitHub:
-                    <a href="https://github.com/aasha114326-lab" target="_blank">
-                        Visit GitHub Profile
-                    </a>
-                </p>
+                <a href="https://github.com/aasha114326-lab" target="_blank">
+                    Visit GitHub Profile
+                </a>
 
             </article>
 
-            <hr>
+        </div>
 
-        </section>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
+    <!-- Contact -->
 
-            <h2>Contact</h2>
+    <section id="contact" class="card">
 
-            <form action="#" method="post">
+        <h2>Contact</h2>
 
-                <p>
-                    <label for="fullname">Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname" required>
-                </p>
+        <form>
 
-                <p>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" required>
 
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="35" required></textarea>
-                </p>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
 
-                <p>
-                    <button type="submit">Submit</button>
-                </p>
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" required></textarea>
 
-            </form>
+            <button type="submit">Send Message</button>
 
-            <p>Email: aashakandel4@gmail.com</p>
+        </form>
+
+        <div class="contact-info">
+
+            <p><strong>Email:</strong> aashakandel4@gmail.com</p>
 
             <p>
-                GitHub:
+                <strong>GitHub:</strong>
                 <a href="https://github.com/aasha114326-lab" target="_blank">
-                    github.com/aashakandel
+                    github.com/aasha114326-lab
                 </a>
             </p>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
-    <hr>
+</main>
 
-    <footer>
-        <p>&copy; 2026 Aasha Kandel. All Rights Reserved.</p>
-    </footer>
+<footer>
+
+    <p>&copy; 2026 Aasha Kandel | All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
