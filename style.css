@@ -2,418 +2,436 @@
    Reset
 =========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* ===========================
    Body
 =========================== */
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f6fb;
-    color:#333;
-    line-height:1.7;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+    line-height: 1.7;
 }
 
 /* ===========================
    Header
 =========================== */
 
-header{
-    background:#1e3a8a;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-header h1{
-    font-size:42px;
-    margin-bottom:10px;
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
-header p{
-    font-size:18px;
+header p {
+    font-size: 18px;
 }
 
 /* ===========================
    Navigation
 =========================== */
 
-nav{
-    background:#0f172a;
-    position:sticky;
-    top:0;
-    z-index:100;
+nav {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav ul{
-    display:flex;
-    justify-content:center;
-    list-style:none;
-    flex-wrap:wrap;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
-nav ul li{
-    margin:15px;
+nav ul li {
+    margin: 15px;
 }
 
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-size:17px;
-    padding:8px 16px;
-    border-radius:5px;
-    transition:.3s;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: .3s;
 }
 
-nav ul li a:hover{
-    background:#2563eb;
+nav ul li a:hover {
+    background: #2563eb;
 }
 
 /* ===========================
    Main
 =========================== */
 
-main{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
 /* ===========================
    Sections
 =========================== */
 
-section{
-    background:white;
-    padding:40px;
-    margin-bottom:35px;
-    border-radius:12px;
-    box-shadow:0 5px 18px rgba(0,0,0,.1);
+section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .1);
 }
 
-section h2{
-    text-align:center;
-    color:#1e3a8a;
-    margin-bottom:30px;
+section h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 30px;
 }
 
 /* ===========================
    Profile
 =========================== */
 
-.profile-container{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    flex-wrap:wrap;
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.profile-image{
-    flex:1;
-    text-align:center;
+.profile-image {
+    flex: 1;
+    text-align: center;
 }
 
-.profile-image img{
-    width:230px;
-    height:230px;
-    border-radius:50%;
-    object-fit:cover;
-    border:6px solid #2563eb;
+.profile-image img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #2563eb;
 }
 
-.profile-text{
-    flex:2;
+.profile-text {
+    flex: 2;
 }
 
-.profile-text h3{
-    color:#1e3a8a;
-    margin-bottom:15px;
+.profile-text h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
 }
 
-.profile-text p{
-    margin-bottom:15px;
-    text-align:justify;
+.profile-text p {
+    margin-bottom: 15px;
+    text-align: justify;
 }
 
 /* ===========================
    Skills
 =========================== */
 
-.skills-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.skill-card{
-    background:#eef5ff;
-    padding:25px;
-    border-radius:10px;
-    text-align:center;
-    border-top:5px solid #2563eb;
-    transition:.3s;
+.skill-card {
+    background: #eef5ff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border-top: 5px solid #2563eb;
+    transition: .3s;
 }
 
-.skill-card:hover{
-    transform:translateY(-6px);
+.skill-card:hover {
+    transform: translateY(-6px);
 }
 
-.skill-card h3{
-    color:#1e3a8a;
-    margin-bottom:12px;
+.skill-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 12px;
 }
 
-.skill-card p{
-    color:#555;
+.skill-card p {
+    color: #555;
 }
 
 /* ===========================
    Projects
 =========================== */
 
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
 }
 
-.project-grid article{
-    background:#eef5ff;
-    padding:25px;
-    border-left:5px solid #2563eb;
-    border-radius:10px;
+.project-grid article {
+    background: #eef5ff;
+    padding: 25px;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
 }
 
-.project-grid h3{
-    color:#1e3a8a;
-    margin-bottom:12px;
+.project-grid h3 {
+    color: #1e3a8a;
+    margin-bottom: 12px;
 }
 
-.project-grid p{
-    margin-bottom:15px;
+.project-grid p {
+    margin-bottom: 15px;
 }
 
-.project-grid a{
-    text-decoration:none;
-    color:#2563eb;
-    font-weight:bold;
+.project-grid a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
 }
 
-.project-grid a:hover{
-    text-decoration:underline;
+.project-grid a:hover {
+    text-decoration: underline;
 }
 
 /* ===========================
    Image Slider
 =========================== */
 
-.slider{
-    position:relative;
-    width:90%;
-    max-width:850px;
-    margin:30px auto;
+.slider {
+    position: relative;
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
 }
 
-.slider-window{
-    overflow:hidden;
-    border-radius:12px;
+.slider-window {
+    overflow: hidden;
+    border-radius: 12px;
 }
 
-.slider-track{
-    display:flex;
-    transition:transform .6s ease-in-out;
+.slider-track {
+    display: flex;
+    transition: transform .6s ease-in-out;
 }
 
-.slider-track img{
-    width:100%;
-    flex-shrink:0;
-    height:450px;
-    object-fit:cover;
+.slider-track img {
+    width: 100%;
+    flex-shrink: 0;
+    height: 450px;
+    object-fit: cover;
 }
 
 /* ===========================
    Buttons
 =========================== */
 
-.slider-btn{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    background:rgba(0,0,0,.6);
-    color:white;
-    border:none;
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    font-size:24px;
-    cursor:pointer;
-    transition:.3s;
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 10;
 }
 
-.slider-btn:hover{
-    background:#2563eb;
+.slider-btn:hover {
+    background: #2563eb;
 }
 
-.slider-prev{
-    left:-20px;
+.slider-prev {
+    left: -20px;
 }
 
-.slider-next{
-    right:-20px;
+.slider-next {
+    right: -20px;
 }
 
 /* ===========================
    Dots
 =========================== */
 
-.slider-dots{
-    display:flex;
-    justify-content:center;
-    margin-top:20px;
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.dot{
-    width:14px;
-    height:14px;
-    background:#bbb;
-    border-radius:50%;
-    margin:0 6px;
-    cursor:pointer;
-    transition:.3s;
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: .3s;
 }
 
-.dot.active{
-    background:#2563eb;
+.dot.active {
+    background: #2563eb;
 }
 
 /* ===========================
    Contact
 =========================== */
 
-form{
-    max-width:700px;
-    margin:auto;
+form {
+    max-width: 700px;
+    margin: auto;
 }
 
-form label{
-    display:block;
-    margin-top:15px;
-    margin-bottom:8px;
-    font-weight:bold;
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 form input,
-form textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    font-size:16px;
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
-form textarea{
-    resize:vertical;
+form textarea {
+    resize: vertical;
 }
 
-form button{
-    margin-top:20px;
-    background:#1e3a8a;
-    color:white;
-    padding:12px 30px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:16px;
+form button {
+    margin-top: 20px;
+    background: #1e3a8a;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-form button:hover{
-    background:#2563eb;
+form button:hover {
+    background: #2563eb;
 }
 
-.contact-details{
-    text-align:center;
-    margin-top:30px;
+.contact-details {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.contact-details a{
-    color:#2563eb;
-    text-decoration:none;
+.contact-details a {
+    color: #2563eb;
+    text-decoration: none;
 }
 
-.contact-details a:hover{
-    text-decoration:underline;
+.contact-details a:hover {
+    text-decoration: underline;
 }
 
 /* ===========================
    Footer
 =========================== */
 
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 /* ===========================
    Responsive
 =========================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-    .profile-container{
-        flex-direction:column;
-        text-align:center;
+    /* Navigation */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
     }
 
-    .profile-text{
-        text-align:center;
+    nav ul li {
+        margin: 6px 0;
     }
 
-    .profile-text p{
-        text-align:center;
+    /* Padding adjustments */
+    section {
+        padding: 20px 15px;
     }
 
-    .slider-track img{
-        height:300px;
+    /* Profile Section */
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .slider-prev{
-        left:5px;
+    .profile-text p {
+        text-align: center;
     }
 
-    .slider-next{
-        right:5px;
+    /* Grids stack into 1 column */
+    .project-grid, 
+    .skills-container {
+        grid-template-columns: 1fr;
     }
 
+    /* Slider component */
+    .slider {
+        width: 100%;
+    }
+
+    .slider-track img {
+        height: 280px;
+    }
+
+    /* Pull navigation arrows inside bounds */
+    .slider-prev {
+        left: 10px;
+    }
+
+    .slider-next {
+        right: 10px;
+    }
+
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
 }
 
-@media(max-width:480px){
+@media (max-width: 480px) {
 
-    header h1{
-        font-size:30px;
+    header h1 {
+        font-size: 28px;
     }
 
-    nav ul{
-        flex-direction:column;
+    .slider-track img {
+        height: 220px;
     }
-
-    nav ul li{
-        margin:8px;
-    }
-
-    section{
-        padding:25px;
-    }
-
-    .slider-track img{
-        height:220px;
-    }
-
 }
