@@ -1,138 +1,87 @@
-// ===============================
+// =========================
 // IMAGE SLIDER
-// ===============================
+// =========================
 
-// Select Elements
 const track = document.querySelector(".slider-track");
-const images = document.querySelectorAll(".slider-track img");
+const slides = document.querySelectorAll(".slider-track img");
 const prevBtn = document.querySelector(".slider-prev");
 const nextBtn = document.querySelector(".slider-next");
 const dotsContainer = document.querySelector(".slider-dots");
 
-let currentSlide = 0;
-let autoSlide;
+let currentIndex = 0;
+const totalSlides = slides.length;
 
 // Create Dots
-images.forEach((image, index) => {
+for (let i = 0; i < totalSlides; i++) {
 
     const dot = document.createElement("span");
     dot.classList.add("dot");
 
-    if(index === 0){
+    if (i === 0) {
         dot.classList.add("active");
     }
 
-    dot.addEventListener("click", function(){
+    dot.addEventListener("click", function () {
 
-        currentSlide = index;
-        showSlide();
+        currentIndex = i;
+        updateSlider();
 
     });
 
     dotsContainer.appendChild(dot);
 
-});
+}
 
 const dots = document.querySelectorAll(".dot");
 
-// Show Slide
-function showSlide(){
+// Update Slider
+function updateSlider() {
 
-    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-    dots.forEach(dot => {
+    dots.forEach(function(dot){
         dot.classList.remove("active");
     });
 
-    dots[currentSlide].classList.add("active");
+    dots[currentIndex].classList.add("active");
 
 }
 
-// Next Slide
-function nextSlide(){
+// Next Button
+nextBtn.addEventListener("click", function () {
 
-    currentSlide++;
+    currentIndex++;
 
-    if(currentSlide >= images.length){
-        currentSlide = 0;
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0;
     }
 
-    showSlide();
+    updateSlider();
 
-}
+});
 
-// Previous Slide
-function previousSlide(){
+// Previous Button
+prevBtn.addEventListener("click", function () {
 
-    currentSlide--;
+    currentIndex--;
 
-    if(currentSlide < 0){
-        currentSlide = images.length - 1;
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
     }
 
-    showSlide();
-
-}
-
-// Button Events
-nextBtn.addEventListener("click", function(){
-
-    nextSlide();
-    resetAutoSlide();
+    updateSlider();
 
 });
 
-prevBtn.addEventListener("click", function(){
+// Auto Slide Every 3 Seconds
+setInterval(function () {
 
-    previousSlide();
-    resetAutoSlide();
+    currentIndex++;
 
-});
+    if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
 
-// Auto Slide
-function startAutoSlide(){
+    updateSlider();
 
-    autoSlide = setInterval(function(){
-
-        nextSlide();
-
-    }, 3000);
-
-}
-
-// Reset Timer
-function resetAutoSlide(){
-
-    clearInterval(autoSlide);
-    startAutoSlide();
-
-}
-
-// Start Slider
-showSlide();
-startAutoSlide();
-
-
-// ===============================
-// SMOOTH SCROLL NAVIGATION
-// ===============================
-
-const navLinks = document.querySelectorAll("nav a");
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", function(e){
-
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute("href"));
-
-        target.scrollIntoView({
-
-            behavior: "smooth"
-
-        });
-
-    });
-
-});
+}, 3000);
