@@ -1,6 +1,6 @@
-/* ==========================
+/* =========================
    RESET
-========================== */
+========================= */
 
 *{
     margin:0;
@@ -15,9 +15,9 @@ body{
     line-height:1.6;
 }
 
-/* ==========================
+/* =========================
    HEADER
-========================== */
+========================= */
 
 header{
     background:#1e3a8a;
@@ -28,28 +28,25 @@ header{
 
 header h1{
     font-size:42px;
+    margin-bottom:10px;
 }
 
 header p{
-    margin-top:10px;
-    font-size:20px;
+    font-size:18px;
 }
 
-/* ==========================
+/* =========================
    NAVIGATION
-========================== */
+========================= */
 
 nav{
     background:#0f172a;
-    position:sticky;
-    top:0;
-    z-index:1000;
 }
 
 nav ul{
-    list-style:none;
     display:flex;
     justify-content:center;
+    list-style:none;
     flex-wrap:wrap;
 }
 
@@ -60,7 +57,6 @@ nav ul li{
 nav ul li a{
     color:white;
     text-decoration:none;
-    font-size:18px;
     padding:10px 18px;
     border-radius:5px;
     transition:.3s;
@@ -70,107 +66,26 @@ nav ul li a:hover{
     background:#2563eb;
 }
 
-/* ==========================
-   IMAGE SLIDER
-========================== */
-
-#gallery{
-    margin:40px auto;
-    width:90%;
-    max-width:1000px;
-}
-
-#gallery h2{
-    text-align:center;
-    margin-bottom:20px;
-    color:#1e3a8a;
-}
-
-.slider{
-    position:relative;
-}
-
-.slider-window{
-    overflow:hidden;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-.slider-track{
-    display:flex;
-    transition:transform .5s ease-in-out;
-}
-
-.slider-track img{
-    width:100%;
-    min-width:100%;
-    height:450px;
-    object-fit:cover;
-}
-
-.slider-btn{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    background:rgba(0,0,0,.5);
-    color:white;
-    border:none;
-    padding:15px;
-    font-size:26px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.slider-prev{
-    left:10px;
-}
-
-.slider-next{
-    right:10px;
-}
-
-.slider-btn:hover{
-    background:black;
-}
-
-.slider-dots{
-    text-align:center;
-    margin-top:20px;
-}
-
-.dot{
-    width:15px;
-    height:15px;
-    border-radius:50%;
-    display:inline-block;
-    background:#bbb;
-    margin:0 5px;
-    cursor:pointer;
-}
-
-.dot.active{
-    background:#2563eb;
-}
-
-/* ==========================
+/* =========================
    MAIN
-========================== */
+========================= */
 
 main{
-    width:85%;
-    margin:auto;
+    width:90%;
+    max-width:1100px;
+    margin:30px auto;
 }
 
-/* ==========================
-   SECTION
-========================== */
+/* =========================
+   SECTIONS
+========================= */
 
 section{
     background:white;
-    margin:40px 0;
+    margin-bottom:35px;
     padding:35px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
 section h2{
@@ -178,12 +93,12 @@ section h2{
     color:#1e3a8a;
     margin-bottom:25px;
     border-bottom:3px solid #2563eb;
-    padding-bottom:10px;
+    padding-bottom:8px;
 }
 
-/* ==========================
+/* =========================
    PROFILE
-========================== */
+========================= */
 
 #profile{
     text-align:center;
@@ -192,49 +107,50 @@ section h2{
 #profile img{
     width:220px;
     height:220px;
+    object-fit:cover;
     border-radius:50%;
     border:5px solid #2563eb;
-    object-fit:cover;
-    margin:20px 0;
+    margin:20px auto;
+    display:block;
 }
 
 #profile p{
     max-width:850px;
     margin:auto;
-    font-size:18px;
+    font-size:17px;
 }
 
-/* ==========================
+/* =========================
    SKILLS
-========================== */
+========================= */
 
 dl{
-    margin-top:20px;
+    max-width:800px;
+    margin:auto;
 }
 
 dt{
-    font-size:20px;
-    color:#1e3a8a;
-    font-weight:bold;
     margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#1e3a8a;
 }
 
 dd{
-    margin-left:25px;
-    margin-top:8px;
-    margin-bottom:10px;
+    margin-left:20px;
+    margin-top:6px;
 }
 
-/* ==========================
+/* =========================
    PROJECTS
-========================== */
+========================= */
 
 article{
     background:#eef4ff;
-    border-left:6px solid #2563eb;
     padding:20px;
+    margin:20px 0;
+    border-left:6px solid #2563eb;
     border-radius:8px;
-    margin-top:20px;
 }
 
 article h3{
@@ -243,12 +159,12 @@ article h3{
 }
 
 article p{
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 
 article a{
-    text-decoration:none;
     color:#2563eb;
+    text-decoration:none;
     font-weight:bold;
 }
 
@@ -256,17 +172,93 @@ article a:hover{
     text-decoration:underline;
 }
 
-/* ==========================
-   CONTACT FORM
-========================== */
+/* =========================
+   IMAGE SLIDER
+========================= */
 
-form{
-    max-width:650px;
+#gallery{
+    text-align:center;
+}
+
+.slider{
+    position:relative;
+    max-width:900px;
     margin:auto;
 }
 
-form p{
-    margin-bottom:20px;
+.slider-window{
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.slider-track{
+    display:flex;
+    transition:transform .6s ease-in-out;
+}
+
+.slider-track img{
+    width:100%;
+    flex-shrink:0;
+    height:450px;
+    object-fit:cover;
+}
+
+.slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.5);
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    transition:.3s;
+    z-index:100;
+}
+
+.slider-prev{
+    left:15px;
+}
+
+.slider-next{
+    right:15px;
+}
+
+.slider-btn:hover{
+    background:#2563eb;
+}
+
+.slider-dots{
+    text-align:center;
+    margin-top:20px;
+}
+
+.dot{
+    width:14px;
+    height:14px;
+    display:inline-block;
+    border-radius:50%;
+    background:#bbb;
+    margin:0 5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dot.active{
+    background:#2563eb;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+form{
+    max-width:700px;
+    margin:auto;
 }
 
 label{
@@ -277,9 +269,10 @@ input,
 textarea{
     width:100%;
     padding:12px;
-    margin-top:6px;
+    margin-top:8px;
+    margin-bottom:18px;
     border:1px solid #ccc;
-    border-radius:6px;
+    border-radius:5px;
     font-size:16px;
 }
 
@@ -287,24 +280,23 @@ textarea{
     resize:vertical;
 }
 
-button{
+button[type="submit"]{
     background:#2563eb;
     color:white;
-    border:none;
     padding:12px 25px;
-    border-radius:6px;
-    font-size:16px;
+    border:none;
+    border-radius:5px;
     cursor:pointer;
-    transition:.3s;
+    font-size:16px;
 }
 
-button:hover{
+button[type="submit"]:hover{
     background:#1d4ed8;
 }
 
-/* ==========================
+/* =========================
    FOOTER
-========================== */
+========================= */
 
 footer{
     background:#0f172a;
@@ -314,63 +306,57 @@ footer{
     margin-top:40px;
 }
 
-/* ==========================
+/* =========================
    RESPONSIVE
-========================== */
+========================= */
 
 @media(max-width:768px){
 
-    header h1{
-        font-size:32px;
-    }
+header h1{
+    font-size:32px;
+}
 
-    nav ul{
-        flex-direction:column;
-        align-items:center;
-    }
+nav ul{
+    flex-direction:column;
+}
 
-    main{
-        width:95%;
-    }
+nav ul li{
+    margin:10px 0;
+}
 
-    .slider-track img{
-        height:300px;
-    }
+.slider-track img{
+    height:280px;
+}
 
-    #profile img{
-        width:180px;
-        height:180px;
-    }
+#profile img{
+    width:180px;
+    height:180px;
+}
 
-    section{
-        padding:25px;
-    }
+section{
+    padding:25px;
+}
+
 }
 
 @media(max-width:480px){
 
-    header h1{
-        font-size:28px;
-    }
+header h1{
+    font-size:28px;
+}
 
-    header p{
-        font-size:16px;
-    }
+header p{
+    font-size:16px;
+}
 
-    .slider-track img{
-        height:220px;
-    }
+.slider-track img{
+    height:220px;
+}
 
-    .slider-btn{
-        padding:10px;
-        font-size:20px;
-    }
+.slider-btn{
+    width:40px;
+    height:40px;
+    font-size:20px;
+}
 
-    nav ul li{
-        margin:8px;
-    }
-
-    nav ul li a{
-        font-size:16px;
-    }
 }
