@@ -4,7 +4,6 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Aasha Kandel | Portfolio</title>
@@ -15,266 +14,263 @@
 
 <body>
 
-<!-- Header -->
+    <!-- Header -->
 
-<header>
+    <header>
 
-    <h1>Aasha Kandel</h1>
+        <h1>Aasha Kandel</h1>
 
-    <p>Information Technology Student | Aspiring Software Developer</p>
+        <p>Information Technology Student | Aspiring Software Developer</p>
 
-</header>
+    </header>
 
-<!-- Navigation -->
+    <!-- Navigation -->
 
-<nav>
+    <nav>
 
-    <ul>
+        <ul>
 
-        <li><a href="#profile">Profile</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#knowledge">Skills</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reach">Contact</a></li>
 
-        <li><a href="#knowledge">Skills</a></li>
+        </ul>
 
-        <li><a href="#work">Projects</a></li>
+    </nav>
 
-        <li><a href="#reach">Contact</a></li>
+    <!-- Main -->
 
-    </ul>
+    <main>
 
-</nav>
+        <!-- Profile -->
 
-<!-- Image Slider -->
+        <section id="profile">
 
-<section id="gallery">
+            <h2>Profile</h2>
 
-    <h2>Portfolio Gallery</h2>
+            <img src="Aasha.jpeg" alt="Aasha Kandel">
 
-    <div class="slider">
+            <p>
 
-        <button class="slider-btn slider-prev">
+                Hello! My name is <strong>Aasha Kandel</strong>. I am an Information Technology student with a strong interest in web development, programming, and software engineering. I enjoy building responsive websites and practical applications while improving my technical knowledge through academic and personal projects. My goal is to become a professional software developer by continuously learning and creating useful software solutions.
 
-            &#10094;
+            </p>
 
-        </button>
+        </section>
 
-        <div class="slider-window">
+        <!-- Skills -->
 
-            <div class="slider-track">
+        <section id="knowledge">
 
-                <img src="image copy 2.jpeg" alt="Portfolio Image 1">
+            <h2>Technical Skills</h2>
 
-                <img src="image copy.jpeg" alt="Portfolio Image 2">
+            <dl>
 
-                <img src="image.jpeg" alt="Portfolio Image 3">
+                <dt>Programming Languages</dt>
+                <dd>HTML5, CSS3, JavaScript, C, Java</dd>
+
+                <dt>Database</dt>
+                <dd>MySQL, SQL</dd>
+
+                <dt>Development Tools</dt>
+                <dd>Git, GitHub, Visual Studio Code</dd>
+
+                <dt>Office Applications</dt>
+                <dd>Microsoft Word, Excel, PowerPoint</dd>
+
+                <dt>Other Skills</dt>
+                <dd>Responsive Web Design, Team Collaboration, Problem Solving</dd>
+
+            </dl>
+
+        </section>
+
+        <!-- Projects -->
+
+        <section id="work">
+
+            <h2>Projects</h2>
+
+            <article>
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+
+                    Designed and developed a responsive personal portfolio website using HTML5, CSS3, and JavaScript to present my profile, skills, academic work, and contact information.
+
+                </p>
+
+                <p>
+
+                    <strong>GitHub Repository:</strong>
+
+                    <a href="https://github.com/aasha114326-lab/Portfolio" target="_blank">
+
+                        View Repository
+
+                    </a>
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Image Slider Library</h3>
+
+                <p>
+
+                    Created a responsive image slider using HTML, CSS, and JavaScript featuring smooth sliding animation, navigation buttons, indicator dots, and responsive design.
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>Requirements Engineering Case Study</h3>
+
+                <p>
+
+                    Prepared a complete software requirements engineering report including stakeholder analysis, UML diagrams, functional requirements, and system documentation.
+
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Portfolio Gallery -->
+
+        <section id="gallery">
+
+            <h2>Portfolio Gallery</h2>
+
+            <div class="slider">
+
+                <button class="slider-btn slider-prev">
+
+                    &#10094;
+
+                </button>
+
+                <div class="slider-window">
+
+                    <div class="slider-track">
+
+                        <img src="image copy 2.jpeg" alt="Portfolio Image 1">
+
+                        <img src="image copy.jpeg" alt="Portfolio Image 2">
+
+                        <img src="image.jpeg" alt="Portfolio Image 3">
+
+                    </div>
+
+                </div>
+
+                <button class="slider-btn slider-next">
+
+                    &#10095;
+
+                </button>
 
             </div>
 
-        </div>
+            <div class="slider-dots"></div>
 
-        <button class="slider-btn slider-next">
+        </section>
 
-            &#10095;
+        <!-- Contact -->
 
-        </button>
+        <section id="reach">
 
-    </div>
+            <h2>Get in Touch</h2>
 
-    <div class="slider-dots"></div>
+            <form>
 
-</section>
+                <p>
 
-<!-- Main Content -->
+                    <label for="fullname">Full Name</label><br>
 
-<main>
+                    <input type="text"
+                           id="fullname"
+                           name="fullname"
+                           required>
 
-<!-- Profile -->
+                </p>
 
-<section id="profile">
+                <p>
 
-    <h2>Profile</h2>
+                    <label for="email">Email Address</label><br>
 
-    <img src="Aasha.jpeg" alt="Aasha Kandel" width="200">
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
 
-    <p>
+                </p>
 
-        Hello! My name is <strong>Aasha Kandel</strong>. I am an Information Technology student with an interest in web development, programming, and software engineering. I enjoy building responsive websites and practical applications while continuously improving my technical knowledge. My goal is to become a skilled software developer by gaining experience through academic projects and real-world practice.
+                <p>
 
-    </p>
+                    <label for="comments">Message</label><br>
 
-</section>
+                    <textarea id="comments"
+                              name="comments"
+                              rows="6"
+                              required></textarea>
 
-<!-- Skills -->
+                </p>
 
-<section id="knowledge">
+                <button type="submit">
 
-    <h2>Technical Skills</h2>
+                    Send Message
 
-    <dl>
+                </button>
 
-        <dt>Programming Languages</dt>
-        <dd>HTML5, CSS3, JavaScript, C, Java</dd>
+            </form>
 
-        <dt>Database</dt>
-        <dd>MySQL, SQL</dd>
+            <br>
 
-        <dt>Development Tools</dt>
-        <dd>Git, GitHub, Visual Studio Code</dd>
+            <p>
 
-        <dt>Office Applications</dt>
-        <dd>Microsoft Word, Excel, PowerPoint</dd>
+                <strong>Email:</strong>
 
-        <dt>Other Skills</dt>
-        <dd>Responsive Web Design, Problem Solving, Team Collaboration</dd>
+                aashakandel4@gmail.com
 
-    </dl>
+            </p>
 
-</section>
+            <p>
 
-<!-- Projects -->
+                <strong>GitHub:</strong>
 
-<section id="work">
+                <a href="https://github.com/aasha114326-lab" target="_blank">
 
-    <h2>Projects</h2>
+                    github.com/aasha114326-lab
 
-    <article>
+                </a>
 
-        <h3>Personal Portfolio Website</h3>
+            </p>
 
-        <p>
+        </section>
 
-            Designed and developed a responsive portfolio website using HTML5, CSS3, and JavaScript to showcase my profile, technical skills, academic work, and contact information.
+    </main>
 
-        </p>
+    <!-- Footer -->
 
-        <p>
-
-            <strong>GitHub Repository:</strong>
-
-            <a href="https://github.com/aasha114326-lab/Portfolio" target="_blank">
-
-                https://github.com/aasha114326-lab/Portfolio
-
-            </a>
-
-        </p>
-
-    </article>
-
-    <article>
-
-        <h3>Image Slider Library</h3>
+    <footer>
 
         <p>
 
-            Developed a responsive image slider using HTML, CSS, and JavaScript featuring navigation buttons, indicator dots, smooth slide animation, and responsive layout.
+            &copy; 2026 Aasha Kandel | All Rights Reserved.
 
         </p>
 
-    </article>
+    </footer>
 
-    <article>
-
-        <h3>Requirements Engineering Case Study</h3>
-
-        <p>
-
-            Prepared a complete software requirements report including stakeholder analysis, functional and non-functional requirements, UML diagrams, and system documentation.
-
-        </p>
-
-    </article>
-
-</section>
-
-<!-- Contact -->
-
-<section id="reach">
-
-    <h2>Get in Touch</h2>
-
-    <form action="#" method="post">
-
-        <p>
-
-            <label for="fullname">Full Name</label><br>
-
-            <input type="text"
-                   id="fullname"
-                   name="fullname"
-                   required>
-
-        </p>
-
-        <p>
-
-            <label for="email">Email Address</label><br>
-
-            <input type="email"
-                   id="email"
-                   name="email"
-                   required>
-
-        </p>
-
-        <p>
-
-            <label for="comments">Message</label><br>
-
-            <textarea
-                id="comments"
-                name="comments"
-                rows="6"
-                required></textarea>
-
-        </p>
-
-        <button type="submit">
-
-            Send Message
-
-        </button>
-
-    </form>
-
-    <br>
-
-    <p>
-
-        <strong>Email:</strong>
-
-        aashakandel4@gmail.com
-
-    </p>
-
-    <p>
-
-        <strong>GitHub:</strong>
-
-        <a href="https://github.com/aasha114326-lab" target="_blank">
-
-            github.com/aasha114326-lab
-
-        </a>
-
-    </p>
-
-</section>
-
-</main>
-
-<!-- Footer -->
-
-<footer>
-
-    <p>
-
-        &copy; 2026 Aasha Kandel. All Rights Reserved.
-
-    </p>
-
-</footer>
-
-<script src="javascript.js"></script>
+    <script src="javascript.js"></script>
 
 </body>
 
