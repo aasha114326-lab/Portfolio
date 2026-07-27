@@ -1,200 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aasha Kandel | Portfolio</title>
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <div class="container">
 
-        <h1>Aasha Kandel</h1>
-        <p class="subtitle">Information Technology Student</p>
+    <h1>Aasha Kandel</h1>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <p class="subtitle">Information Technology Student</p>
 
-    </div>
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a href="#profile">Profile</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
 </header>
 
-<main class="container">
+<!-- ================= IMAGE SLIDER ================= -->
 
-    <!-- Profile -->
-    <section id="profile" class="card">
+<section class="slider-section">
 
-        <h2>Profile</h2>
+    <div class="slider-container">
 
-        <div class="profile-content">
+        <div class="slider">
 
-            <figure>
-                <img src="Aasha.jpeg" alt="Photo of Aasha Kandel">
-                <figcaption>Aasha Kandel</figcaption>
-            </figure>
+            <img src="IMAGE/image1.jpg" class="slide active" alt="Slide 1">
 
-            <div>
+            <img src="IMAGE/image2.jpg" class="slide" alt="Slide 2">
 
-                <p>Hello! I am <strong>Aasha Kandel</strong>, an Information Technology student.</p>
-
-                <p>I enjoy learning web technologies, programming, and building software applications using modern development practices.</p>
-
-                <p>My goal is to strengthen my technical skills and pursue a career in software development while continuously learning new technologies.</p>
-
-            </div>
+            <img src="IMAGE/image3.jpg" class="slide" alt="Slide 3">
 
         </div>
 
-    </section>
+        <button class="prev">&#10094;</button>
 
-    <!-- Skills -->
+        <button class="next">&#10095;</button>
 
-    <section id="skills" class="card">
+    </div>
 
-        <h2>Skills</h2>
+    <div class="dots">
 
-        <dl>
+        <span class="dot active"></span>
 
-            <dt>HTML5</dt>
-            <dd>Creating semantic and accessible webpages.</dd>
+        <span class="dot"></span>
 
-            <dt>CSS3</dt>
-            <dd>Responsive layouts using Flexbox and Grid.</dd>
+        <span class="dot"></span>
 
-            <dt>C Programming</dt>
-            <dd>Functions, arrays, pointers and file handling.</dd>
+    </div>
 
-            <dt>Java Programming</dt>
-            <dd>Object-oriented programming and exception handling.</dd>
+</section>
 
-            <dt>Microsoft Office</dt>
-            <dd>Word, Excel and PowerPoint.</dd>
+<main>
 
-            <dt>Communication</dt>
-            <dd>Teamwork, presentations and collaboration.</dd>
+<!-- ================= PROFILE ================= -->
 
-        </dl>
+<section id="profile">
 
-    </section>
+    <h2>Profile</h2>
 
-    <!-- Experience -->
+    <div class="profile-content">
 
-    <section id="experience" class="card">
+        <figure>
 
-        <h2>Experience</h2>
+            <img src="Aasha.jpeg" alt="Photo of Aasha Kandel">
 
-        <div class="experience-grid">
+            <figcaption>Aasha Kandel</figcaption>
 
-            <article>
+        </figure>
 
-                <h3>Programming Labs</h3>
+        <div>
 
-                <p>Completed practical programming exercises using C and Java.</p>
+            <p>Hello! I am <strong>Aasha Kandel</strong>, an Information Technology student.</p>
 
-            </article>
+            <p>I enjoy learning web technologies, programming, and building software applications using modern development practices.</p>
 
-            <article>
-
-                <h3>HTML Projects</h3>
-
-                <p>Designed semantic HTML5 webpages and portfolio projects.</p>
-
-            </article>
-
-            <article>
-
-                <h3>Academic Teamwork</h3>
-
-                <p>Worked on software engineering, database and networking assignments with classmates.</p>
-
-            </article>
+            <p>My goal is to strengthen my technical skills and pursue a career in software development while continuously learning new technologies.</p>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- Projects -->
+</section>
 
-    <section id="projects" class="card">
+<!-- ================= SKILLS ================= -->
 
-        <h2>Projects</h2>
+<section id="skills">
 
-        <div class="project-grid">
+    <h2>Skills</h2>
 
-            <article>
+    <dl>
 
-                <h3>Personal Portfolio Website</h3>
+        <dt>HTML5</dt>
+        <dd>Creating semantic and accessible web pages.</dd>
 
-                <p>Designed and developed a responsive portfolio using HTML5 and CSS.</p>
+        <dt>CSS3</dt>
+        <dd>Responsive layouts using Flexbox and Grid.</dd>
 
-                <a href="https://github.com/aasha114326-lab/Portfolio" target="_blank">
-                    View Repository
-                </a>
+        <dt>JavaScript</dt>
+        <dd>Interactive web applications and DOM manipulation.</dd>
 
-            </article>
+        <dt>C Programming</dt>
+        <dd>Functions, arrays, pointers, and file handling.</dd>
 
-            <article>
+        <dt>Java Programming</dt>
+        <dd>Object-oriented programming concepts.</dd>
 
-                <h3>Programming Practice Repository</h3>
+        <dt>Microsoft Office</dt>
+        <dd>Word, Excel, and PowerPoint.</dd>
 
-                <p>A GitHub repository containing coursework and programming practice.</p>
+    </dl>
 
-                <a href="https://github.com/aasha114326-lab" target="_blank">
-                    Visit GitHub Profile
-                </a>
+</section>
 
-            </article>
+<!-- ================= EXPERIENCE ================= -->
 
-        </div>
+<section id="experience">
 
-    </section>
+    <h2>Experience</h2>
 
-    <!-- Contact -->
+    <div class="experience-grid">
 
-    <section id="contact" class="card">
+        <article>
 
-        <h2>Contact</h2>
+            <h3>Programming Labs</h3>
 
-        <form>
+            <p>Completed practical programming exercises using C and Java.</p>
 
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" required>
+        </article>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
+        <article>
 
-            <label for="message">Message</label>
-            <textarea id="message" rows="6" required></textarea>
+            <h3>Web Development</h3>
 
-            <button type="submit">Send Message</button>
+            <p>Designed responsive websites using HTML5, CSS3, and JavaScript.</p>
 
-        </form>
+        </article>
 
-        <div class="contact-info">
+        <article>
 
-            <p><strong>Email:</strong> aashakandel4@gmail.com</p>
+            <h3>Academic Projects</h3>
 
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/aasha114326-lab" target="_blank">
-                    github.com/aasha114326-lab
-                </a>
-            </p>
+            <p>Worked on software engineering, networking, and database assignments.</p>
 
-        </div>
+        </article>
 
-    </section>
+    </div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <article>
+
+            <h3>Personal Portfolio Website</h3>
+
+            <p>Designed and developed a responsive portfolio using HTML5, CSS3, and JavaScript.</p>
+
+            <a href="https://github.com/aasha114326-lab/Portfolio" target="_blank">
+                View Repository
+            </a>
+
+        </article>
+
+        <article>
+
+            <h3>Programming Practice Repository</h3>
+
+            <p>A GitHub repository containing coursework and programming practice.</p>
+
+            <a href="https://github.com/aasha114326-lab" target="_blank">
+                Visit GitHub Profile
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <form>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <div class="contact-info">
+
+        <p><strong>Email:</strong> aashakandel4@gmail.com</p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/aasha114326-lab" target="_blank">
+                github.com/aasha114326-lab
+            </a>
+        </p>
+
+    </div>
+
+</section>
 
 </main>
 
@@ -204,5 +249,8 @@
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
