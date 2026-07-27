@@ -1,8 +1,8 @@
-// =========================
-// IMAGE SLIDER
-// =========================
+// ===============================
+// Image Slider
+// ===============================
 
-const track = document.querySelector(".slider-track");
+const sliderTrack = document.querySelector(".slider-track");
 const slides = document.querySelectorAll(".slider-track img");
 const prevBtn = document.querySelector(".slider-prev");
 const nextBtn = document.querySelector(".slider-next");
@@ -11,10 +11,11 @@ const dotsContainer = document.querySelector(".slider-dots");
 let currentIndex = 0;
 const totalSlides = slides.length;
 
-// Create Dots
+// Create indicator dots
 for (let i = 0; i < totalSlides; i++) {
 
     const dot = document.createElement("span");
+
     dot.classList.add("dot");
 
     if (i === 0) {
@@ -34,52 +35,62 @@ for (let i = 0; i < totalSlides; i++) {
 
 const dots = document.querySelectorAll(".dot");
 
-// Update Slider
+// Update slider position
 function updateSlider() {
 
-    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    sliderTrack.style.transform =
+        `translateX(-${currentIndex * 100}%)`;
 
-    dots.forEach(function(dot){
+    dots.forEach(function (dot) {
+
         dot.classList.remove("active");
+
     });
 
     dots[currentIndex].classList.add("active");
 
 }
 
-// Next Button
+// Next button
 nextBtn.addEventListener("click", function () {
 
     currentIndex++;
 
     if (currentIndex >= totalSlides) {
+
         currentIndex = 0;
+
     }
 
     updateSlider();
 
 });
 
-// Previous Button
+// Previous button
 prevBtn.addEventListener("click", function () {
 
     currentIndex--;
 
     if (currentIndex < 0) {
+
         currentIndex = totalSlides - 1;
+
     }
 
     updateSlider();
 
 });
 
-// Auto Slide Every 3 Seconds
+// Auto Slide every 3 seconds
+
 setInterval(function () {
 
     currentIndex++;
 
     if (currentIndex >= totalSlides) {
+
         currentIndex = 0;
+
     }
 
     updateSlider();
